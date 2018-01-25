@@ -3,38 +3,98 @@
 <head>
 	<meta charset="utf-8">
 	<title>Dim Sum Collector</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
-
-
   
 
 </head>
 <body>
 
-<h3>Target Score:
-	<div id="targetscore"></div>
-</h3>
+<div class="container">
 
-<div id="dim-sums">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8" id="game-name">
+			<h1>Dim Sum Collector!</h1>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+		<p>You will be given a random number at the start of the game.</p>
+		<br>
+		<p>There are 4 dim sums below. By clicking on a dim sum you will add a specific amount of points to your total scores.</p>
+		<br>
+		<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+		<br>
+		<p>The value of edach dim sum is hidden from you until you click on it.</p>
+		<br>
+		<p>Each time when the game starts, the game will change the values of each dim sum.</p>
+		<br>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+
+
+
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-4" id="targetbox">
+			<h3>Target Score:
+				<div id="targetscore"></div>
+			</h3>
+		</div>
+		<div class="col-md-4" id="winloss">
+			<div id="win-loss">
+				<h3>Wins: 
+					<div id="win"></div>
+				</h3>
+				<h3>Losses:
+					<div id="loss"></div>
+				</h3>
+				<div id="text"></div>
+			</div>	
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<div id="dim-sums">
+				<img class="dimsum-image" id="image1" src="assets/images/gyoza.png">
+				<img class="dimsum-image" id="image2" src="assets/images/porkbun.jpg">
+				<img class="dimsum-image" id="image3" src="assets/images/siumai.jpg">
+				<img class="dimsum-image" id="image4" src="assets/images/soupdumpling.jpg">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-2"></div>
+			<div class="col-md-8" id="score">
+				<h3>Your total score is:
+					<div id="totalscore"></div>
+				</h3>
+			</div>
+		<div class="col-md-2"></div>
+	</div>
+
+
 </div>
-
-<h3>Your total score is:
-	<div id="totalscore"></div>
-</h3>
-
-<div id="win-loss">
-<h3>Wins: <div id="win"></div></h3>
-<h3>Losses:<div id="loss"></div></h3>
-<div id="text"></div>
-</div>
-
-
 
 
 

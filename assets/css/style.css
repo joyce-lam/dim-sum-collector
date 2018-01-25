@@ -1,0 +1,44 @@
+
+
+#game-name {
+	background-color: #e6ffcc;
+}
+
+
+.col-md-8 {
+	background-color: #e6ffff;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+
+#targetbox {
+	background-color: #ffff80;
+	height: 150px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#winloss {
+	background-color: #ffff80;
+	height: 150px;
+	text-align: center;
+}
+
+#image1,
+#image4 {
+	width: 230px;
+  	height: 200px;
+}
+
+#image2,
+#image3 {
+	width: 330px;
+  	height: 180px;
+}
+
+#score {
+	background-color: #ffe6e6;
+	height: 150px;
+	text-align: center;
+}
